@@ -1,0 +1,114 @@
+
+.body{
+    /*background: #5c8995;*/
+    min-width: 320px;
+    min-height: 480px;
+    position: static;
+    overflow: hidden;
+}
+
+.header{
+    -webkit-order: 2;
+    position: relative;
+    /*background: bisque;*/
+    top: 172px;
+
+}
+.header .hao123{
+    display: none;
+}
+/*“更多产品”选项设置*/
+.header .more{
+    background: none;
+    color: #46484b;
+    text-decoration: none;
+}
+/*设置导航链接样式*/
+.header a{
+    color: #46484b;
+    margin-left: 6%;
+    height: 42px;
+    width: 10%;
+    display: inline-block;
+    text-decoration: none;
+}
+.header span{
+    width: 150px;
+    display: block;
+    position: absolute;
+    top: -172px;
+    right: -20px;
+}
+
+.header span a{
+    width: 50px;
+    height: 26px;
+    padding: 5px 8px;
+    display: inline;
+}
+
+.article{
+    -webkit-order: 1;
+    position: static;
+    /*background: yellowgreen;*/
+
+}
+
+.article .logo{
+    width: 200px;
+    height: 87px;
+    /*margin: 17px 0 15px;*/
+}
+/*设置搜索框和按钮为表格显示方式，居中对齐*/
+.article .search{
+    width: 100%;
+    padding: 0 5% 0 5%;
+    display: block;
+}
+
+.article form{
+    display: -webkit-box;
+}
+
+.article .mai {
+    display: none;
+}
+/*设置搜索框样式*/
+.article .baidu{
+    width: 65%;
+    height: 42px;
+    margin-top: 1px;
+    padding: 7px 42px 7px 6px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #b8b8b8;
+}
+/*设置搜索按钮样式*/
+.article .bTbaidu{
+    width: 20%;
+    min-width: 79px;
+    height: 42px;
+    box-sizing: border-box;
+    font-size: 16px;
+    display: block;
+    background: -webkit-linear-gradient(top,#f9f9f9,#e7e9eb);
+    border: 1px solid #8d9394;
+    color: #46484b;
+    font-weight: 700;
+    outline: 0;
+}
+
+.footer{
+    -webkit-order: 3;
+    position: absolute;
+    min-width: 320px;
+    /*background: goldenrod;*/
+    bottom: 44px;
+}
+
+.footer .cpicon{
+    display: none;
+}

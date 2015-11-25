@@ -1,0 +1,165 @@
+/*去除布局内外边距*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+/*定义最外部div布局*/
+.body{
+    min-width: 810px;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+}
+/*定义header div布局，承载导航列表选项*/
+.header {
+    height: 24px;
+    position: absolute;
+    right: 0;
+    margin-top: 19px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 24px;
+    display: block;
+}
+/*设置导航链接样式，字体加粗*/
+.header a{
+    color: black;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+/*伪类：鼠标划过字体变色*/
+.header a:hover{
+    color: blue;
+}
+/*“设置”和“登陆”选项不加粗*/
+.header span{
+    font-weight: lighter;
+}
+/*“更多产品”选项设置*/
+.header .more{
+    width: 60px;
+    height: 24px;
+    background-color: #38f;
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 19px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+/*伪类：鼠标划过背景和字体变色*/
+.header .more:hover{
+    background-color: transparent;
+    color: black;
+}
+/*定义主体布局，logo和搜索框*/
+.article{
+    height: 191px;
+    width: 100%;
+    position: relative;
+    top: 96px;
+    text-align: center;
+    display: block;
+}
+/*设置搜索框和按钮为表格显示方式，居中对齐*/
+.search{
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+/*设置麦克风样式*/
+.mai {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    margin: 2px 0 0 475px;
+    width: 30px;
+    height: 32px;
+    background-image: url("image/mai.png");
+    background-size: 25px 25px;
+    background-position: 0 50%;
+    /*ie hack 兼容背景图片显示方式*/
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src="image/mai.png", sizingMethod=scale);
+    }
+/*定义footer div布局*/
+.footer{
+    height: 100px;
+    position: absolute;
+    bottom: 44px;
+    /* _top ie6 hack 兼容footer位置高度*/
+    _top: 464px;
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    font-size: 12px;
+    display: block;
+}
+/*设置搜索框样式*/
+.baidu{
+    width: 500px;
+    height: 34px;
+    position: relative;
+    top: -1px;
+    /*ie hack 兼容搜索框输入内容间距*/
+    line-height: 30px;
+    padding-left: 6px;
+    display: inline-block;
+    border: 1px solid #b8b8b8;
+}
+/*@media screen and (-webkit-min-device-pixel-ratio:0){.baidu {top:0.5px}}*/
+.baidu:focus{
+    border-color: #3385ff;
+    outline: none;
+}
+/*设置搜索按钮样式*/
+.bTbaidu{
+    width: 100px;
+    height: 36px;
+    /*ie hack*/
+    height/*\**/: 38px\9;
+    font-size: 15px;
+    margin-left: -1px;
+    display: inline-block;
+    background-color: #3385ff;
+    border: 1px solid transparent;
+    color: #ffffff;
+}
+/*伪类：鼠标划过按钮变色阴影*/
+.bTbaidu:hover{
+    background-color: #237aff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+}
+/*设置百度logo样式*/
+.logo{
+    width: 270px;
+    height: 129px;
+}
+/*定义footer div样式*/
+.lp{
+    height: 14px;
+    margin: 16px 0 10px 0;
+}
+.cp{
+    height: 20px;
+    color: #666;
+}
+/*设置超链接字体颜色*/
+.cp a{
+    color: #666;
+}
+.cpicon{
+    width: 26px;
+    height: 23px;
+    display: inline-block;
+    overflow: hidden;
+    background-image: url(image/baidu_end.jpg);
+    background-size: 28px 28px;
+    position: relative;
+    top: 3px;
+    right: 4px;
+    /*ie hack 兼容背景图片显示方式*/
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+            src="image/baidu_end.jpg", sizingMethod=scale);
+}
